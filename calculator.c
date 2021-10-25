@@ -3,28 +3,28 @@
 //#include <math.h>
 
 int main() {
-  int a, b, c;
+  int num1, num2, ans; // num1 = first input, num2 = second input, ans = answer, op = operator.
   char op;
 
   printf("Input first number: ");
-  scanf("%d", &a);
+  scanf("%d", &num1);
   printf("Input second number: ");
-  scanf("%d", &b);
+  scanf("%d", &num2);
   printf("Select an operator (+, -, *, /): ");
   scanf("%s", &op);
 
   if(op == '+'){
-    c = a + b;
-    printf("%d + %d = %d\n", a, b, c);
+    ans = num1 + num2;
+    printf("%d + %d = %d\n", num1, num2, ans);
   } else if(op == '-'){
-    c = a - b;
-    printf("%d - %d = %d\n", a, b, c);
+    ans = num1 - num2;
+    printf("%d - %d = %d\n", num1, num2, ans);
   } else if(op == '*'){
-    c = a * b;
-    printf("%d * %d = %d\n", a, b, c);
+    ans = num1 * num2;
+    printf("%d * %d = %d\n", num1, num2, ans);
   } else if(op == '/'){
-    c = a / b;
-    printf("%d / %d = %d\n", a, b, c);
+    ans = num1 / num2;
+    printf("%d / %d = %d\n", num1, num2, ans);
   } else {
     printf("Invalid Operator! Try Again...\n");
   }
